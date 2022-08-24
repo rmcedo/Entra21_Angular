@@ -1,0 +1,23 @@
+<h1 class="text-center mt-5 fonte1">EVENTS</h1>
+<br>
+
+
+<p (click)="minhaFunc()" class="text-center fonte4">Clique AQUI</p>
+
+<section class="text-center">
+    <button (click)="somar()" class="btn btn-lg btn-outline-dark m-1 ">+</button>
+    <button (click)="subtrair(1,2)" class="btn btn-lg btn-outline-dark m-1">-</button>
+    <button (click)="multiplicar()" class="btn btn-lg btn-outline-dark m-1">*</button>
+    <button (click)="dividir()" class="btn btn-lg btn-outline-dark m-1">/</button>
+</section>
+
+<div style="font-size: 75px;" class="text-center fonte5 pt-2 pb-2 fw-bolder">{{resultado}}</div>
+
+<hr>
+<div class="pt-2 text-center">
+    <img src="https://i.pinimg.com/originals/ac/24/f1/ac24f102c2cf3c001bc4237375a58127.gif" alt="" [width]="tamanho">
+    <br>
+    
+    <button (click)="aumentar()" class="btn text-center btn-primary btn-sm m-2">Aumentar</button>
+    <button (click)="diminuir()" class="btn text-center btn-danger btn-sm">Diminuir</button>
+</div>
