@@ -1,0 +1,29 @@
+<section class="container pt-5">
+  <div class="text-center">
+
+    <p *ngIf="true">Se true, está me vendo</p>
+
+    <button (click)="alterar()" class="botao btn btn-lg btn-outline-success">Gerar Card</button>
+
+    <div *ngIf="aparece" class="fonte3 m-5 row">
+
+      <div class="card bg-light">
+        <div class="card-body ">
+          Olá Mundo!
+        </div>
+      </div>
+
+    </div>
+
+    <input type="number" [(ngModel)]="idade">
+    <div class="fonte4 row m-5">
+
+      <div class="card">
+        <div *ngIf="maiorIdade()" class=" card-body "> é maior de idade </div>
+        <div *ngIf="!maiorIdade()" class=" card-body "> é menor de idade </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

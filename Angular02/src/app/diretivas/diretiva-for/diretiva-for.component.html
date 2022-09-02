@@ -1,0 +1,26 @@
+<div class="container">
+  <table class="table table-bordered table-dark table-sm table-hover">
+    <thead>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Ações</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of alunos; let i = index">
+        <td>{{i}}</td>
+        <td>{{aluno}}</td>
+        <td>
+          <button (click)="deletar(i)" class="btn btn-outline-danger">Delete</button>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="row justify-content-center">
+    <input type="text" [(ngModel)]="nome">
+    <button (click)="adicionar()" class="btn btn-success m-2">Add</button>
+
+  </div>
+
+</div>

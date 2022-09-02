@@ -1,0 +1,20 @@
+<div class="container pt-5">
+  <div class="text-center pt-5">
+
+      <input type="text" [(ngModel)]="nome">
+      <br>
+      <hr>
+      <input type="number" [(ngModel)]="idade">
+      <br>
+      <hr>
+      <input type="text" [(ngModel)]="cidade">
+      <br>
+      <hr>
+
+
+      <button (click)="enviarDados()" class="m-3 btn btn-dark">Receber Dados</button>
+      <button (click)="enviarLista()" class="m-3 btn btn-primary">Enviar Lista</button>
+
+  </div>
+
+</div>

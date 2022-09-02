@@ -1,0 +1,33 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <a class="brand-link text-center">
+      <span class="brand-text font-weight-light">Angular Classes</span>
+  </a>
+  <div class="sidebar">
+      <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-header text-center">Classes</li>
+              <li *ngFor="let link of links" class="nav-item">
+                  <a [routerLink]="link.rota" class="nav-link">
+                      <i [class]="link.cor"></i>
+                      <p class="text">{{link.textContent}}</p>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+</aside>
+
+
+    <!-- <div class="container">
+        <button class="botao btn btn-primary m-2" routerLink="goPagina">Página</button>
+        <button class="botao btn btn-success" routerLink="/">Início</button>
+        <button class="botao btn btn-warning m-2" routerLink="outro">Outro</button>
+        <button class="botao btn btn-info m-2" routerLink="property">Property</button>
+        <button class="botao btn btn-dark m-2" routerLink="event">Event</button>
+        <button class="botao btn btn-secondary m-2" routerLink="maoDupla">Mão Dupla</button>
+        <button class="botao btn btn-danger m-2" [routerLink]="['/receber', 'Rafael', 28, 'Brusque']">Receber</button>
+        <button class="botao btn btn-light m-2" routerLink="enviar">Enviar</button>
+        <button class="botao btn btn-outline-primary m-2" routerLink="diretivaIf">Diretiva IF</button>
+        <button class="botao btn btn-outline-success m-2" routerLink="diretivaFor/:lista">Diretiva For</button>
+
+    </div> -->

@@ -1,14 +1,28 @@
+<app-header [hidden]="!seguranca.entrou"></app-header>
+
+<app-menu [hidden]="!seguranca.entrou"> </app-menu>
 
 
-<div class="container">
+<div class="content-wrapper" style="min-height: 1301.27px;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card mt-5 p-4">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
   <button class="botao btn btn-primary m-2" routerLink="goPagina">Página</button>
   <button class="botao btn btn-success"routerLink="/">Início</button>
   <button class="botao btn btn-warning m-2" routerLink="outro">Outro</button>
   <button class="botao btn btn-info m-2" routerLink="property">Property</button>
   <button class="botao btn btn-dark m-2" routerLink="event">Event</button>
   <button class="botao btn btn-secondary m-2" routerLink="maoDupla">Mão Dupla</button>
-  
 
-</div>
 
-<router-outlet></router-outlet>
+</div> -->
+

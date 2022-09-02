@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SegurancaService } from './seguranca.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular02';
+
+  constructor(public seguranca: SegurancaService) {
+
+
+  }
+
 }
