@@ -8,6 +8,14 @@
       <div class="card-footer">
         <button class="btn btn-outline-info btn-sm" (click)="buscar()">Buscar</button>
         <button class="m-2 btn btn-outline-warning btn-sm" (click)="buscarTypes()">Buscar Types</button>
+<br>
+        <label for="">Email</label><br>
+        <input class="mb-2" type="text" [(ngModel)]="email"><br>
+        <label for="">Senha</label><br>
+        <input type="password" [(ngModel)]="senha">
+        <br>
+        <button class="btn btn-outline-dark m-2" (click)="login()">Login</button>
+        <button class="btn btn-outline-secondary"(click)="register()">Register</button>
       </div>
     </div>
   </div>

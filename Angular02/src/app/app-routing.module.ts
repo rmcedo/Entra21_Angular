@@ -19,6 +19,7 @@ import { PropertyComponent } from './binding/property/property.component';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 import { LoginComponent } from './login/login.component';
 
+
 const routes: Routes = [
 
   { path: "goPagina", component: PaginaComponent, canActivate:[SegurancaService] },
