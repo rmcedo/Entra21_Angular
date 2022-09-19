@@ -83,6 +83,12 @@ export class MenuComponent implements OnInit {
       cor:"nav-icon far fa-circle text-light"
 
     })
+    this.links.push({
+      rota:"testesBackEnd",
+      textContent: "Testes Back-End",
+      cor:"nav-icon far fa-circle text-dark"
+
+    })
 
   }
 

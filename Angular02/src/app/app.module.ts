@@ -23,6 +23,7 @@ import { DadosModule } from './dados/dados.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component'
 import { LoginComponent } from './login/login.component';
+import { TestesBackEndComponent } from './testes-back-end/testes-back-end.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { LoginComponent } from './login/login.component';
     ConsumindoApiComponent,
     LoginComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    TestesBackEndComponent
     ,
   ],
 

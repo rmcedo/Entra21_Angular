@@ -1,0 +1,173 @@
+<div class="row">
+
+  <div class="col-12">
+
+    <div class="card">
+
+      <div class="card-header">
+
+        <h3 class="card-title">Programadores cadastrados</h3>
+
+
+
+        <div class="card-tools">
+
+          <div class="input-group input-group-sm" style="width: 150px">
+
+            <button class="btn btn-outline-success" (click)="openForm()">
+
+              Add
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div [hidden]="cadastrando" class="card-body table-responsive p-0">
+
+        <table class="table table-hover text-nowrap">
+
+          <thead>
+
+            <tr>
+
+              <th>Actions</th>
+
+              <th>Id</th>
+
+              <th>Name</th>
+
+              <th>Quantity of Languages</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody *ngIf="programadores">
+
+            <tr *ngFor="let programador of programadores">
+
+              <td>
+
+                <button class="btn btn-outline-primary btn-sm" (click)="updateForm(programador)">
+
+                  Edit
+
+                </button>
+
+                <button class="btn btn-outline-danger btn-sm" (click)="delete(programador)">
+
+                  Delete
+
+                </button>
+
+              </td>
+
+              <td>{{ programador.id }}</td>
+
+              <td>{{ programador.nome }}</td>
+
+              <td>{{ programador.qtd_linguagem }}</td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+
+      <div *ngIf="programador" [hidden]="!cadastrando" class="card-body ">
+
+        <div class="row mt-2">
+
+          <div class="col"></div>
+
+          <div class="col-4">
+
+            <div class="row">
+
+              <div class="col">
+
+                <div class="card">
+
+                  <div class="card-body">
+
+                    <div class="row">
+
+                      <div class="col-3">
+
+                        <label for="id">Id:</label>
+
+                        <input type="text" class="form-control" [(ngModel)]="programador.id" placeholder="id" disabled />
+
+                      </div>
+
+                      <div class="col">
+
+                        <label for="nome">
+                          <font color="red">*</font> Nome:
+                        </label>
+
+                        <input type="text" class="form-control" [(ngModel)]="programador.nome" placeholder="nome" required />
+
+                      </div>
+
+                      <div class="col-3">
+
+                        <label for="idade">Qtd Linguagens:</label>
+
+                        <input type="number" class="form-control" [(ngModel)]="programador.qtd_linguagem" placeholder="idade" />
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <button [hidden]="programador.id" class="btn btn-outline-success" (click)="create()">
+
+                      Add
+
+                    </button>
+
+                    <button [hidden]="!programador.id" class="btn btn-outline-success" (click)="update()">
+
+                      Update
+
+                    </button>
+
+                    <button class="btn btn-outline-danger" (click)="closeForm()">
+
+                      Cancel
+
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
