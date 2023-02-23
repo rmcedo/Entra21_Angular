@@ -19,6 +19,7 @@ import { PropertyComponent } from './binding/property/property.component';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component';
 import { LoginComponent } from './login/login.component';
 import { TestesBackEndComponent } from './testes-back-end/testes-back-end.component';
+import { ClientegreenComponent } from './clientegreen/clientegreen.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: "diretivaFor/:lista", component: DiretivaForComponent, canActivate:[SegurancaService]  },
   { path: "consumindoApi", component: ConsumindoApiComponent},
   { path: "testesBackEnd", component: TestesBackEndComponent, canActivate:[SegurancaService]},
+  { path: "clienteGreen", component: ClientegreenComponent, canActivate:[SegurancaService]},
 
 
 ];

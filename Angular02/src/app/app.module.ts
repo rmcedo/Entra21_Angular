@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConsumindoApiComponent } from './consumindo-api/consumindo-api.component'
 import { LoginComponent } from './login/login.component';
 import { TestesBackEndComponent } from './testes-back-end/testes-back-end.component';
+import { ClientegreenComponent } from './clientegreen/clientegreen.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { TestesBackEndComponent } from './testes-back-end/testes-back-end.compon
     LoginComponent,
     HeaderComponent,
     MenuComponent,
-    TestesBackEndComponent
+    TestesBackEndComponent,
+    ClientegreenComponent
     ,
   ],
 

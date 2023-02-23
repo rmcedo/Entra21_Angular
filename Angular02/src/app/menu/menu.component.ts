@@ -89,6 +89,12 @@ export class MenuComponent implements OnInit {
       cor:"nav-icon far fa-circle text-dark"
 
     })
+    this.links.push({
+      rota:"clienteGreen",
+      textContent: "Tela Cliente GreenBank",
+      cor:"nav-icon far fa-circle text-success"
+
+    })
 
   }
 
